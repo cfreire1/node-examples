@@ -1,3 +1,8 @@
+# IDES
+.idea
+
+
+# node
 node_modules
 build
 npm-debug.log

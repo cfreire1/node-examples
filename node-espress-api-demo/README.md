@@ -1,7 +1,7 @@
 
 1. instalar express
 ```
-    npm install expres
+    npm install express
 ```
 
 2. Inciar servicio

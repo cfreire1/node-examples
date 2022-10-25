@@ -1,23 +1,7 @@
 # Instalacion 
-
-* Tener ubuntu actualizado.
-```
-    sudo apt update
-    sudo apt upgrade
-```
-
-* Instalar node
-```
-    curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-    apt install -y nodejs
-    node -v
-```
-
-* Instalar npm , manejador de packetes
-```
-    apt install npm
-    npm -v
-```
+* Requisitos
+  * Instalar node
+  * Instalar npm , manejador de paquetes
 
 * Instalar typescript para el proyecto.
 ```
@@ -31,11 +15,13 @@
 
 # Configuracion
 * Genera el package.json
+  * Es un archivo generado automáticamente cuando se instalan paquetes o dependencias en el proyecto
 ``` 
   npm init -y
 ```
 
 * Genera el tsconfig.json
+  * Es el que indica en un proyecto que se está trabajando con TypeScript
 ```
   npx tsc --init
 ```
@@ -405,8 +391,48 @@
   yourSize('sad')//ERROR. No está en las opciones.
 ```
 
-* Null y Undefined
+* Tipos de datos : Null y Undefined
 ```
+  # Null: es para indicar un valor nulo
+  let myVar = null; //Tipo any
+  let myNull: null = null; // Tipo null
+
+    # Con Union Types
+    let myNumber: number | null = null;
+    myNumber = 50;
+
+  # Undefined : para algo indefinido
+  let otherVar = undefined; //Tipo any
+  let myUndefined: undefined = undefined; //Tipo undefined
+
+    # Con Union Types
+    let myString: string | undefined = undefined;
+    myString = "Hola mundo";
+
+```
+
+* Example if: si viene con informacion devuelve 'dato'.toLowerCase, en caso contrario si es nulo devuelve 'Nada'
+```
+  # tradicional
+    let myStringName: string | null = null;
+
+    let hello = 'hola';
+    if(myStringName){
+      hello += myStringName.toLowerCase();
+    }else{
+      hello += 'Nada';
+    }
+
+  # de una linea
+    let myStringName: string | null = null;
+
+    let hello = 'hola';
+    hello += myStringName?toLowerCase() || 'Nada';
+
+
 ```
 
 
+* Funciones
+```
+```

@@ -1,22 +1,8 @@
-# Descricion
-
 # Instalacion
-* tener ubuntu completamente actualizado.
-```
-    sudo apt update
-    sudo apt upgrade
-```
-* instalar node
-```
-    curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-    apt install -y nodejs
-    node -v
-```
-* Instalar npm # Manejador de packetes
-```
-    apt install npm
-    npm -v
-```
+* Requisitos
+  * Instalar node
+  * Instalar npm , manejador de paquetes
+
 * Cliente de comandos Angular
 ```
     //instalacion global
@@ -47,4 +33,4 @@
     ng serve --port=3500
 ```
 
-# 
+

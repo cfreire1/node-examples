@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function TaskListRest() {
+function ApiListRest() {
 
     const [apifirst, setapifirst] = useState([]);
     const URL_FAKE_API = 'https://jsonplaceholder.typicode.com/posts';
@@ -29,4 +29,4 @@ function TaskListRest() {
     )
 }
 
-export default TaskListRest
+export default ApiListRest

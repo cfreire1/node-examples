@@ -1,8 +1,8 @@
 import './App.css';
-import TaskList from './viewList/TaskList'
-import TaskListStandard from './viewList/TaskListStandard'
-import TaskListRest from './viewList/TaskListRest'
-import TaskForm from './form/TaskForm'
+import TaskList from './task/TaskList'
+import TaskListStandard from './task/TaskListStandard'
+import ApiListRest from './apiRest/ApiListRest'
+import TaskForm from './task/TaskForm'
 
 import { tasks as data } from '../data/tasks'
 import { useState, useEffect } from 'react'
@@ -69,7 +69,7 @@ function App() {
       <TaskListStandard />
       <hr />
       Obtener api rest externa:
-      <TaskListRest />
+      <ApiListRest />
     </div>
   );
 }

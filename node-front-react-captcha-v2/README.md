@@ -23,7 +23,7 @@
 
 ### Comandos para arrancar:
 ```
-npx create-react-app node-front-react-captcha-v2
+npm install
 npm install --save react-google-recaptcha
 npm start
 ```

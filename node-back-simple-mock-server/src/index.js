@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
-const morgan=require('morgan');
+const morgan = require('morgan');
+const cors = require('cors');
+
+//cors - user simple
+app.use(cors());
 
  //Routes
 app.use(require('./routes/example'));

@@ -14,7 +14,7 @@
 ```
 * Iniciar servidor 
 ```
-    npm start dev
+    npm run dev
 ```
 
 

@@ -1,5 +1,5 @@
 {
-  "name": "back-simple-mock-server",
+  "name": "back-express-simple-mock-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

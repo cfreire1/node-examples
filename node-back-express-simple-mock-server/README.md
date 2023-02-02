@@ -22,3 +22,5 @@
 * https://bravedeveloper.com/2021/03/22/crear-un-api-rest-con-nodejs-y-express-nunca-fue-tan-provechoso-y-sencillo/
 * https://expressjs.com/en/guide/error-handling.html
 * https://expressjs.com/en/resources/middleware/cors.html
+* https://www.geeksforgeeks.org/how-to-add-data-in-json-file-using-node-js/
+* https://docs.oracle.com/cd/E50612_01/doc.11122/user_guide/content/fault_json.html

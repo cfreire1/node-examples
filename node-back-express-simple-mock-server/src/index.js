@@ -3,11 +3,11 @@ const app = express();
 const morgan = require('morgan');
 const cors = require('cors');
 
-//cors - user simple
+//cors - uso simple, (permita todo)
 app.use(cors());
 
  //Routes
-app.use(require('./routes/example'));
+app.use(require('./routes/example/example-mok-api'));
 
 //Configuraciones
 app.set('port', process.env.PORT || 3001);

@@ -7,7 +7,8 @@ const cors = require('cors');
 app.use(cors());
 
  //Routes
-app.use(require('./routes/example/example-mok-api'));
+app.use('/example' ,require('./routes/example/example-mok-api'));
+app.use('/example2' ,require('./routes/example2/example-mok-api'));
 
 //Configuraciones
 app.set('port', process.env.PORT || 3001);
@@ -20,5 +21,5 @@ app.use(express.json());
  
 //Iniciando el servidor
 app.listen(app.get('port'),()=>{
-    console.log(`Server listening on port ${app.get('port')}`);
+    console.log(`Server listening http://localhost:${app.get('port')}`);
 });

@@ -28,6 +28,7 @@ var xml_data_1 =
 //url - fake apis  ===============================================
 var endpoint_fake = 
                 {
+                    master_url_mapping: '/example',
                     example_get : '/example-get',
                     example_post : '/example-post',
                     example_post_xml : '/example-post.xml',
@@ -35,6 +36,8 @@ var endpoint_fake =
                 };
 
 //fake apis - test ===============================================
+console.log(endpoint_fake)
+
 router.put(endpoint_fake.example_get+'/:idvalor', (req, res) => {  
     var idvalor = req.params.idvalor;
     res.json({"idvalor": `Valor entregado por parametro es ${idvalor}`} );

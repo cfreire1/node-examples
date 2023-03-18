@@ -15,7 +15,7 @@
     npm run dev
 ```
 
-### Descricion del artefacto
+### Descripcion del MOK API
 * Permite la creacion de responses json o xml de forma dinamica, basta con agregarlos a en el archivo `src/datos/db.js`
 ```
     #Agregar un json con la siguiente estructura 
